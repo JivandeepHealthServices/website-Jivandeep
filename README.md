@@ -42,3 +42,9 @@ The contentents of the Navigation Bar is:
 - Specialty
 - Services
 - Transplant Care(Reading)
+
+## Home
+
+This is the main page of a site.
+
+* Here we'll be configuring
