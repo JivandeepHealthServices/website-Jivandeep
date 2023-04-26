@@ -64,10 +64,11 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')], # Added Manually
-        """
-        Base Directory will have a sub-folder called "templates", where we can access our html files.
-        Here our base directory is website, so we need to add the path to the templates folder.
-        """
+
+        #"""
+        # Base Directory will have a sub-folder called "templates", where we can access our html files.
+        # Here our base directory is website, so we need to add the path to the templates folder.
+        # """
 
         'APP_DIRS': True,
         'OPTIONS': {
