@@ -12,9 +12,9 @@ This is to import the view.py file which is in base_site folder.
 
 # Creating
 urlpatterns = [
-    """
-    If someone comes with a blank path, ient it to the index function in views.py in base_site and name the path "home"
-    """
+    # """
+    # If someone comes with a blank path, ient it to the index function in views.py in base_site and name the path "home"
+    # """
     path("", views.index, name="home"),
 
 
