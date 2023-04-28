@@ -22,8 +22,8 @@ urlpatterns = [
 
     # Added urls.py file in the base_site folder
     path("", include("base_site.urls")),
-    """
-    This will allow us to use the urls.py file in the base_site folder.
-    And any path that matches "" (blank) will be redirected to our home page.
-    """
+    # """
+    # This will allow us to use the urls.py file in the base_site folder.
+    # And any path that matches "" (blank) will be redirected to our home page.
+    # """
 ]
