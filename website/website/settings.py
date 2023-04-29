@@ -21,6 +21,10 @@ from django.contrib.messages import constants as messages
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Template Directory
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -63,7 +67,7 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')], # Added Manually
+        'DIRS': [TEMPLATE_DIR,], # Added Manually
 
         #"""
         # Base Directory will have a sub-folder called "templates", where we can access our html files.
@@ -133,7 +137,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 # Manually
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+    ]
 """
 Here we are adding path to the static folder.
 """
