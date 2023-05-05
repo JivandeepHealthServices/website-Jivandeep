@@ -34,88 +34,77 @@
 
 </head>
 <body>
-<section class="header-section">
-    <div class="header">
+<<div class="header">
 
     <!-- Topbar Start -->
-        <div class="container-fluid header-top ">
-            <div class="header-top-elements-container container-fluid d-grid gap-1 d-md-flex justify-content-md-end">
-
-                <div class="header-top-element d-inline">
-                    <a href="#" class="btn btn-primary btn-sm">Telemed</a>
-                </div>
-
-                {% comment %} <div class="header-top-element d-inline">
-                    <a href="#" class="btn btn-primary btn-sm">Ambulance</a>
-                </div> {% endcomment %}
-
-                <div class="header-top-element d-inline">
-                    <a href="#" class="btn btn-primary btn-sm">Call Us</a>
-                </div>
-            </div>
-        </div>
-    <!-- Topbar End -->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+        <button class="btn btn-info me-md-2" type="button">Telemedicine</button>
+        <button class="btn btn-info me-md-5" type="button">Call-Us</button>
+      </div>
 
 
-    <!-- Navbar Start -->
-{% comment %} <div class="container-fluid header-main">
-    <div class="header-logo">
-
-    </div>
-    <div class="header-navigation">
-
-    </div> {% endcomment %}
-{% comment %} Bootstrap navigation {% endcomment %}
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid gap-20">
-        <a class="navbar-brand mb-0 h1" href="#">Navbar</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- Topbar End -->
 
 
+<!-- Navbar Start -->
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark stickytop">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo" width="50" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <div class="mx-auto">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Product 1</a></li>
+              <li><a class="dropdown-item" href="#">Product 2</a></li>
+              <li><a class="dropdown-item" href="#">Product 3</a></li>
+            </ul>
+          </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
+          <pre> </pre>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Transplant Care
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Product 1</a></li>
+              <li><a class="dropdown-item" href="#">Product 2</a></li>
+              <li><a class="dropdown-item" href="#">Product 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+        </ul>
+      </div>
 
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
-                </ul>
-                {% comment %} <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> {% endcomment %}
-            </div>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-info me-md-2" type="button">Call-Us</button>
+     </div>
 
-        </div>
 
     </div>
-</nav>
-
-</div> {% comment %} header div closes {% endcomment %}
+  </nav>
+</div>
+<!-- Navbar End -->
+</div>
+</header>{% comment %} header div closes {% endcomment %}
 
     {% comment %} <div class="container-fluid sticky-top bg-white shadow-sm header-main">
         <div class="row border-top px-xl-5">
